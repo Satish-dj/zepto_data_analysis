@@ -75,6 +75,8 @@ discountedsellingprice=discountedsellingprice/100.0;
 
 SELECT mrp,discountedsellingprice from zepto;
 
+-- data analysis
+
 -- Q1. Find the top 10 best-value products based on the discount percentage.
 Select distinct name, mrp,discountpercent
 from zepto
@@ -129,4 +131,5 @@ sum( weightinGms * availableQuantity) as Total_inventory_weight
 from zepto
 group by category
 order by Total_inventory_weight;
+
 
